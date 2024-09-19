@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_download">Download</string>
+    <string name="menu_upload">Upload</string>
+    <string name="menu_settings">Setting</string>
+</resources>

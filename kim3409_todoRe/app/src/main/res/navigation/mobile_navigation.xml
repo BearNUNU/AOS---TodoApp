@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.kim3409_todore.ui.home.HomeFragment"
+        android:label="@string/menu_todoList"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_page_eidt"
+            app:destination="@id/nav_edit" />
+        <action
+            android:id="@+id/action_nav_home_self"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_setting"
+            app:destination="@id/nav_setting" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.kim3409_todore.ui.setting.SettingFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/nav_edit"
+        android:name="com.example.kim3409_todore.ui.edit.EditFragment"
+        android:label="menu_edit"
+        tools:layout="@layout/fragment_edit" />
+</navigation>
